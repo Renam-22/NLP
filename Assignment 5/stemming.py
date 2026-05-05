@@ -10,7 +10,6 @@ word = "good"
 
 print("Word:", word)
 
-# ---------------- SYNONYMS ----------------
 synonyms = set()
 for syn in wn.synsets(word):
     for lemma in syn.lemmas():
@@ -19,7 +18,6 @@ for syn in wn.synsets(word):
 print("\nSynonyms:")
 print(synonyms)
 
-# ---------------- ANTONYMS ----------------
 antonyms = set()
 for syn in wn.synsets(word):
     for lemma in syn.lemmas():
@@ -29,7 +27,6 @@ for syn in wn.synsets(word):
 print("\nAntonyms:")
 print(antonyms)
 
-# ---------------- HYPERNYMS ----------------
 hypernyms = set()
 for syn in wn.synsets(word):
     for hyper in syn.hypernyms():
